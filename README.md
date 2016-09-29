@@ -30,8 +30,8 @@ Knobot powers your collective knowledge - capturing, finding and sharing valuabl
 3. Create an Elastic Search service in AWS.
 3. Pull the 'knobot' source
 4. Create a [Slack App](https://api.slack.com/slack-apps) (with a BOT, and the appropriate Event API permissions)
-5. You'll need to update the 'knobot-utils.js' file to include the Slack App client details.
-6. Also update the Elastic Search endpoint in 'knobot-utils.js'
+5. You'll need to update the 'config.js' file to include the Slack App client details.
+6. Also update the Elastic Search endpoint in 'config.js'
 7. Run 'npm install' and 'serverless deploy' from the knobot-lambda/ directory
 8. You're now up and running. Take note of the 'auth' and 'eventendpoint' urls
 9. Head back to Slack, and update/verify the 'auth' and 'eventendpoint' urls in your App
