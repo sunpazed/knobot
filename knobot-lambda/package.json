@@ -1,0 +1,17 @@
+{
+  "name": "knobot-lambda",
+  "version": "1.0.0",
+  "description": "I collect knowledge from experts in your team, and help you search for it - all in Slack",
+  "main": "handler.js",
+  "dependencies": {
+    "request-promise-lite": ">=0.0.1",
+    "nlp_compromise": ">=0.0.1",
+    "request": ">=0.0.1",
+    "request-promise": ">=0.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Franco Trimboli",
+  "license": "(c) figure.ai"
+}

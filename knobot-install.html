@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>knobot | Install to Slack</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="subject" content="figure">
+    <meta name="author" content="figure">
+    <meta name="publisher" content="figure">
+    <meta name="identifier-url" content="http://www.figurehq.com">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@figure">
+    <meta name="twitter:url" content="http://www.figurehq.com">
+    <meta name="twitter:title" content="figure">
+
+    <meta property="og:title" content="figure"/>
+    <meta property="og:site_name" content="www.figurehq.com"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800" rel="stylesheet">
+
+</head>
+
+<body>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #3f0df7;
+  font-size: 20px;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+}
+
+.flex-item {
+  padding: 8px;
+  clear: both;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#install {
+  font-weight: 200;
+  color: #3f0df7;
+  display: block;
+  margin: 30px;
+  font-size: 30px;
+  padding: 0.5em;
+  border: 1px solid #3f0df7;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 0 rgba(48,48,58,.1),0 4px 3px 0 rgba(0,0,0,.2);
+}
+
+h1 {
+  font-weight: 800;
+  margin-bottom: 1ex;
+}
+h3 {
+  margin-bottom: 1ex
+}
+
+
+#copy {
+  max-width: 400px;
+  line-height: 1.2;
+  padding: 1em;
+
+}
+
+#logo > svg {
+  opacity:0;
+  margin-bottom: 10px;
+  width: 200px;
+  -webkit-animation: fadein 2s  forwards; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s  forwards; /* Firefox < 16 */
+      -ms-animation: fadein 2s  forwards; /* Internet Explorer */
+       -o-animation: fadein 2s  forwards; /* Opera < 12.1 */
+          animation: fadein 2s  forwards;
+          -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+          animation-delay: 1s;
+
+          -webkit-transition: all 900ms cubic-bezier(0.830, 0.110, 0.385, 0.965);
+             -moz-transition: all 900ms cubic-bezier(0.830, 0.110, 0.385, 0.965);
+               -o-transition: all 900ms cubic-bezier(0.830, 0.110, 0.385, 0.965);
+                  transition: all 900ms cubic-bezier(0.830, 0.110, 0.385, 0.965); /* custom */
+
+          -webkit-transition-timing-function: cubic-bezier(0.830, 0.110, 0.385, 0.965);
+             -moz-transition-timing-function: cubic-bezier(0.830, 0.110, 0.385, 0.965);
+               -o-transition-timing-function: cubic-bezier(0.830, 0.110, 0.385, 0.965);
+                  transition-timing-function: cubic-bezier(0.830, 0.110, 0.385, 0.965); /* custom */
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: scale(0.9)}
+  to   { opacity: 1; transform: scale(1))}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+
+</style>
+
+    <div class="flex">
+    <div class="flex-item text-center ">
+      <div id="logo">
+
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 width="400px" height="257px" viewBox="0 0 400 397" enable-background="new 0 0 400 397" xml:space="preserve">
+        <g>
+        	<g>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#3F0DF7" d="M69,318c-28.79-32.449-50.073-76.799-47-130
+        			c5.582-96.638,79.708-175.088,183-173c98.343,1.988,175.471,77.876,177,178c1.542,100.971-74.822,178.904-172,183
+        			c-56.893,2.397-94.584-17.877-130-47C76.752,324.915,73.085,321.248,69,318z M189,38C103.657,49.988,54.771,98.438,44,185
+        			c-2.812,92.017,59.124,164.134,147,169c53.642,2.971,96.988-17.898,126-49c23.628-25.33,43.608-63.412,43-109
+        			c-0.028-49.306-18.188-80.478-41-107c-2.915-3.752-6.248-7.085-10-10c-24.156-21.178-52.392-38.275-95-41
+        			C207.984,36.335,195.016,36.335,189,38z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#F4F4F4" d="M189,38c6.016-1.665,18.984-1.665,25,0
+        			C205.667,38,197.333,38,189,38z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#3F0DF7" d="M159,227c-18.333,0-36.667,0-55,0
+        			c-3.751-60.946-1.172-108.936,55-111c0,9.333,0,18.667,0,28c-17.049,0.618-26.271,9.063-27,26c7.008,2.325,18.327,0.34,27,1
+        			C159,189.667,159,208.333,159,227z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#C03F46" d="M159,116c1.665,7.013,1.665,20.987,0,28
+        			C159,134.667,159,125.333,159,116z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#3F0DF7" d="M242,227c-18.333,0-36.667,0-55,0
+        			c-3.751-60.946-1.172-108.936,55-111c0,9.333,0,18.667,0,28c-17.049,0.618-26.271,9.063-27,26c7.009,2.325,18.327,0.34,27,1
+        			C242,189.667,242,208.333,242,227z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#C03F46" d="M242,116c1.665,7.013,1.665,20.987,0,28
+        			C242,134.667,242,125.333,242,116z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#C03F46" d="M159,171c1.666,16.337,1.666,39.663,0,56
+        			C159,208.333,159,189.667,159,171z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#C03F46" d="M242,171c1.666,16.337,1.666,39.663,0,56
+        			C242,208.333,242,189.667,242,171z"/>
+        		<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" fill="#250EC9" d="M44,185c-1.615,21.135,15.405,31.532,25,43
+        			c9.724,11.622,16.76,22.66,26,31c49.897,0,100.774,0,150,0c15.565,0,36.295,3.303,50,0c10.546-2.541,25.286-22.774,33-31
+        			c10.767-11.48,20.667-21.579,32-32c0.608,45.588-19.372,83.67-43,109c-29.012,31.102-72.358,51.971-126,49
+        			C103.124,349.134,41.188,277.017,44,185z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#C03F46" d="M69,318c4.085,3.248,7.752,6.915,11,11
+        			C75.915,325.752,72.248,322.085,69,318z"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#F4F4F4" d="M44,185C54.771,98.438,103.657,49.988,189,38
+        			c8.333,0,16.667,0,25,0c42.608,2.725,70.844,19.822,95,41c2.915,3.752,6.248,7.085,10,10c22.812,26.522,40.972,57.694,41,107
+        			c-11.333,10.421-21.233,20.52-32,32c-7.714,8.226-22.454,28.459-33,31c-13.705,3.303-34.435,0-50,0c-49.226,0-100.103,0-150,0
+        			c-9.24-8.34-16.276-19.378-26-31C59.405,216.532,42.385,206.135,44,185z M159,171c-8.673-0.66-19.992,1.325-27-1
+        			c0.729-16.937,9.951-25.382,27-26 M159,116c-56.172,2.064-58.751,50.054-55,111c18.333,0,36.667,0,55,0 M242,171
+        			c-8.673-0.66-19.991,1.325-27-1c0.729-16.937,9.951-25.382,27-26 M242,116c-56.172,2.064-58.751,50.054-55,111
+        			c18.333,0,36.667,0,55,0"/>
+        		<path fill-rule="evenodd" clip-rule="evenodd" fill="#F4F4F4" d="M309,79c3.752,2.915,7.085,6.248,10,10
+        			C315.248,86.085,311.915,82.752,309,79z"/>
+        	</g>
+        </g>
+        <line fill="none" x1="-283" y1="21" x2="-201" y2="4"/>
+        <path fill="none" stroke="#3F0DF7" stroke-width="20" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+        	M277.278,280.037c-6.439,27.444-62.597,37.698-125.557,22.926"/>
+        </svg>
+
+      </div>
+    </div>
+
+      <div class="flex-item text-center ">
+        <div id="copy">
+        <h1>knobot</h1>
+          <h3>Bring together expertise and knowledge that lives where you work - in Slack!</h2>
+
+        <p>Knobot powers your collective knowledge - capturing, finding and sharing valuable information and putting your people in touch with the expert they need.</p>
+      </div>
+      </div>
+
+      <div class="flex-item text-center ">
+        <a href="https://slack.com/oauth/authorize?&client_id=67203287586.83195109332&scope=commands,bot"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+      </div>
+
+    </div>
+
+</body>
+</html>

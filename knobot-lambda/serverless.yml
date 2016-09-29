@@ -1,0 +1,39 @@
+# serverless 1.0-rc1 config for knobot
+
+service: knobot-lambda
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-east-1
+  timeout: 30
+
+# you can overwrite defaults here
+defaults:
+  stage: prod
+
+# you can add packaging information here
+package:
+  include:
+    - knobot-utils.js
+    - settings.js
+
+functions:
+  knobot:
+    handler: handler.knobot
+    events:
+      - http: GET knobot
+  auth:
+    handler: handler.auth
+    events:
+      - http:
+          method: get
+          path: auth
+          response:
+            headers:
+              Content-Type: "'text/html'"
+            template: $input.path('$')
+  eventendpoint:
+    handler: handler.eventendpoint
+    events:
+      - http: POST eventendpoint
